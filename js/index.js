@@ -1,11 +1,10 @@
 function GetCalculatedCalories() {
-let age = Math.abs(document.getElementById('age').value);
-let height = Math.abs(document.getElementById('height').value);
-let weight = Math.abs(document.getElementById('weight').value);
-let elem = document.querySelector('#results');
-let result;
-let select = document.querySelector('select');
-let choice = select.value;
+const age = Math.abs(document.getElementById('age').value);
+const height = Math.abs(document.getElementById('height').value);
+const weight = Math.abs(document.getElementById('weight').value);
+const elem = document.getElementById('results');
+const select = document.querySelector('select');
+const choice = select.value;
 if (choice === 'male') {
     result = Math.round(10 * weight + 6.25 * height) - (5 * age) + 5;
 }
